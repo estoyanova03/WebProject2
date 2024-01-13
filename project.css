@@ -4,6 +4,7 @@ body {
   }
 
 .info {
+  border-bottom: 2px solid #0f4a86;
     display: flex;
     justify-content: right;
     padding-top: 16px;
@@ -41,16 +42,16 @@ body {
     display: flex;
   }
   .homeContainer-left {
+    border-left: 4px solid #0f4a86;
     margin-right: 5px;
     flex: 1;
-    background-color: #302929;
     float: left;
     width: 40%;
   }
   .homeContainer-right {
     margin-left: 5px;
     flex: 1;
-    background-color: #14c6fcb0;
+    background-color: #0f4a86;
     float: left;
     width: 40%;
     padding: 20px;
@@ -59,5 +60,19 @@ body {
   height: 300px;
   width: 1230px;
   margin: 20px;
-  background-color: #14c6fcb0;
+  background-color: #0f4a86;
+}
+.check{
+  position: relative;   /*children of the class take the postition of the parent*/
+  margin-bottom: 9px;
+}
+
+.check::before {
+  left: -15px;
+  top: -2px;
+  content: '✓';
+  position: absolute;
+}
+.test {
+  list-style-type: none;
 }
