@@ -42,7 +42,7 @@ body {
     display: flex;
   }
   .homeContainer-left {
-    border-left: 4px solid #0f4a86;
+    border-left: 4px solid #0f4a86;   
     margin-right: 5px;
     flex: 1;
     float: left;
@@ -57,10 +57,13 @@ body {
     padding: 20px;
   }
 .mainContainer {
-  height: 300px;
-  width: 1230px;
-  margin: 20px;
-  background-color: #0f4a86;
+  height: 120px;
+  width: auto;
+  background-image: url(logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px;
+  
 }
 .check{
   position: relative;   /*children of the class take the postition of the parent*/
@@ -76,3 +79,20 @@ body {
 .test {
   list-style-type: none;
 }
+.leftContainerText {
+  text-indent: 10px;
+  font-family: Garamond;
+  font-weight: bold;
+  font-size: 25px;
+ }
+ li {
+  font-weight: normal;
+  font-size: 18px;
+ }
+ .rightContainerText {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-family: Garamond;
+  font-weight: bold;
+ }
