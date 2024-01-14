@@ -1,15 +1,27 @@
-function show_list() {
-  var courses = document.getElementById("courses_id");
-
-  if (courses.style.display == "block") {
-    courses.style.display = "none";
-  } else {
-    courses.style.display = "block";
-  }
+function expand() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
-window.onclick = function (event) {
-  if (!event.target.matches('.dropdown_button')) {
-      document.getElementById('courses_id')
-          .style.display = "none";
-        }
-      }
+
+
+/**document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementsByClassName('menuButton');
+  const dropdown = document.getElementsByClassName('dropdown');
+  menuBtn.addEventListener('click', () => {
+    dropdown.('.open');
+  });
+}); */
+
+// function expand() {
+//   document.getElementById("menuButton").classList.toggle("dropdown");
+// }
+
+
+
+
+/*document.addEventListener('DOMCOntentLoaded', () => {
+  function expand() {
+    document.querySelector('menuButton').addEventListener('click', () => {
+      document.querySelector('dropdown').classList.add('open');
+    })
+  };
+}); */

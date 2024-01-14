@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="project.js"></script>
+    
     <link rel="stylesheet" href="project.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="project.js" id="project-js"></script>
 </head>
 <body>
     <div class="info">test</div>
@@ -20,16 +21,21 @@
       <a href="#about">Techniques</a>
       <a href="#about">Management</a>
       <a href="#about">Tool Support for Testing</a>
+
+
+
       <!--menu-->
-      <div class="dropdown_list">
-        <button class="dropdown_button" onclick="show_list()">button</button>
-        <div id="courses_id">
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
+      <button class="menuButton">
+        <div class="menuIcon", onclick="expand()">
+        <div class="lineMenu"></div>
+        <div class="lineMenu"></div>
+        <div class="lineMenu"></div>
+      </div></button>
+        <div id="myDropdown" class="dropInfo">
+            <a href="#home">Home</a><br>
+            <a href="#home">Home</a><br>
         </div>
       </div>
-    </div>
  
     
     
