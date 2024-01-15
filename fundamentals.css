@@ -1,0 +1,58 @@
+.info {
+    border-bottom: 2px solid #0f4a86;
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    padding-right: 30px;
+    background-color: #0f4a86;
+  }
+  .mainDiv {
+    margin-left: 30px;
+    width: 1200px;
+    height: 250px;
+    background-color:#0f4a86;
+  }
+  .title {
+    color: white;
+    font-size: 35px;
+    font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
+    padding-top: 20px;
+  }
+  .title li{
+    padding-left: 17px;
+  }
+  .additionalInfo {
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
+    padding-top: 8%;
+    padding-left: 2%;
+  }
+  .scrollMenu {
+    display: inline-block;
+    margin-top: 10px;
+    align-content: left;
+    background-color: #0f4a86;
+    width: 250px;
+    height: 600px;
+  }
+  .infoPar{
+    margin-right: 100px;
+    margin-top: 20px;
+    float: right;
+    height: 50px;
+    width: 800px;
+  }
+  .infoPar hr{
+    display: inline-block;
+    width: 800px;
+    border-bottom: 2px solid black ;
+  }
+  .parTitle {
+    font-family: 'Courier New', monospace;
+    font-size: 60px;
+  }
+  .parContent {
+    font-family: Garamond, serife;
+    font-size: 20px;
+  }
