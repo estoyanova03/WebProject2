@@ -1,12 +1,8 @@
-.info {
-    border-bottom: 2px solid #0f4a86;
-    display: flex;
-    justify-content: right;
-    padding-top: 10px;
-    padding-right: 30px;
-    background-color: #0f4a86;
-  }
-  .mainDiv {
+.mainContainer {
+    float: right;
+}
+
+.mainDiv {
     margin-left: 30px;
     width: 1200px;
     height: 250px;
@@ -28,24 +24,23 @@
     padding-top: 8%;
     padding-left: 2%;
   }
-  .scrollMenu {
-    display: inline-block;
+  .sidebar {
     margin-top: 10px;
     align-content: left;
     background-color: #0f4a86;
     width: 250px;
     height: 600px;
+    display: inline-block;
   }
   .infoPar{
-    margin-right: 100px;
-    margin-top: 20px;
-    float: right;
-    height: 50px;
-    width: 800px;
+    /*float: right;*/
+    width: 50%;
+    margin-top: 10px;
+    height: auto;
   }
   .infoPar hr{
-    display: inline-block;
-    width: 800px;
+    /*display: inline-block;*/
+    width: 400px;
     border-bottom: 2px solid black ;
   }
   .parTitle {
@@ -56,3 +51,39 @@
     font-family: Garamond, serife;
     font-size: 20px;
   }
+  .container {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width:1024px
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width:1280px
+    }
+}
+.text-60 {
+    font-size: 60px;
+}
+.front-courier {
+    font-family: 'Courier New', monospace;
+}
+.wrapper {
+    width: 70%;
+}
+.infoBody {
+    /*display: inline-block;*/
+}
