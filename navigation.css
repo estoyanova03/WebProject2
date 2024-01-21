@@ -8,7 +8,7 @@
   }
 .topnav {
   margin-top: 5px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #CFCECE;
   display: flex;
   justify-content: center;
@@ -28,18 +28,13 @@
   background-color: #9d8cffb0;
 }
                     /*menu*/
-.menu{
-  display: flex;
-  justify-content: center;
-}
 .menuButton {
+    padding: 5px;
     background-color: #CFCECE;
     border: none;
     cursor: pointer;
 }
-.menuIcon {
-    align-content: center;
-}
+
 .menuButton:hover, .menuIcon:focus {
     background-color: #9d8cffb0;
 }
@@ -50,8 +45,8 @@
   margin: 6px 0;
 }
 .dropInfo {
-  top:110px;
-  right: 40px;
+  top:55px;
+  /*right: 53px;*/
   display: none;
   position: absolute;
   background-color: #f1f1f1;
