@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .mainContainer {
     float: left;
     display: inline-block;
@@ -44,6 +48,8 @@
   .parContent {
     font-family: Garamond, serife;
     font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
   }
   .container {
     width: 100%;

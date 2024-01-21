@@ -1,77 +1,81 @@
-.toc {
-    float: left;
-    margin-top: 280px;
-    margin-left: 20px;
-    position:fixed;
-    background: none;
-    left: 0;
-    top: 6em;
-    padding: 1em;
-    width: 14em;
-    height: 100vh;
-    line-height: 2;
+html {
+    scroll-behavior: smooth;
   }
   
-  .toc ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  /* 2. Make nav sticky */
+  main > nav {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
   }
-  .toc ul ul {
-    padding-left: 2em;
+  
+  /* 3. ScrollSpy active styles (see JS tab for activation) */
+  .section-nav li.active > a {
+    color: #333;
+    font-weight: 500;
   }
-  .toc li a {
+  
+  /* Sidebar Navigation */
+  .section-nav {
+    top: 60%;
     display: inline-block;
-    color: #000000;
+    margin-top: 30px;
+    height: auto;
+    width: 100px;
+    position: fixed;
+    padding-left: 0;
+    border-left: 1px solid #efefef;
+  }
+  
+  .section-nav a {
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .toc li.visible > a {
-    color: #30abdb;
-    transform: translate(5px);
-  }
-  
-  .toc-marker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .toc-marker path {
-    transition: all 0.3s ease;
-  }
-  
-  /*.contents {
-    float: left;
-    padding: 1em;
-    max-width: 800px;
-    font-size: 1.2em;
-    font-family: "Frank Ruhl Libre", sans-serif;
-  }
-  .contents img {
-    max-width: 100%;
-  }*/
-  .contents .code-block {
-    white-space: pre;
-    overflow: auto;
-    max-width: 100%;
-  }
-  .contents .code-block code {
     display: block;
-    background-color: none;
-    padding: 10px;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
   }
-  .contents .code-inline {
-    background-color: none;
-    padding: 4px;
+  
+  .section-nav a:hover,
+  .section-nav a:focus {
+    color: #666;
   }
-  .contents h2,
-  .contents h3 {
-    padding-top: 1em;
+  
+  /** Poor man's reset **/
+  * {
+    box-sizing: border-box;
   }
-  .sidebar{
-    display: inline-block;
-    margin-top: 10px;
+  
+  html, body {
+    background: #fff;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin-left: 1rem;
+  }
+  
+  h1 {
+    font-weight: 300;
+  }
+  
+  /** page layout **/
+  main {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    max-width: 100em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /** enlarge the sections for this demo, so that we have a long scrollable page **/
+  section {
+    padding-bottom: 20rem;
   }

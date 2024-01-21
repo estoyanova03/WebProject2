@@ -14,7 +14,9 @@
   justify-content: center;
 }
 .topnav a {
-  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: #302929;
   text-align: center;
   padding: 14px 16px;
@@ -25,26 +27,23 @@
 .topnav a:hover {
   background-color: #9d8cffb0;
 }
-.active {
-  background-color: #2b87f0;
-  color: white;
-}
                     /*menu*/
+.menu{
+  display: flex;
+  justify-content: center;
+}
 .menuButton {
     background-color: #CFCECE;
     border: none;
     cursor: pointer;
 }
 .menuIcon {
-    padding-left: 40px;
-    padding-top: 6px;
     align-content: center;
 }
 .menuButton:hover, .menuIcon:focus {
     background-color: #9d8cffb0;
 }
 .lineMenu {
-  align-content: center;
   width: 30px;
   height: 3px;
   background-color: black;
@@ -67,3 +66,8 @@
   display: block;
 }
 .show {display: block;}
+
+.icon {
+  width: 14px !important;
+  margin-right: 10px;
+}

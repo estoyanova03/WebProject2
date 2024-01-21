@@ -110,3 +110,37 @@ button css:
   font-size: 1.2em;
   font-family: "Frank Ruhl Libre", sans-serif;
 }
+
+<div class="sidebar">
+    <nav class="toc">
+    <ul>
+        <li><a href="#topic1">TOPIC 1</a></li>
+        <li><a href="#topic2">TOPIC 2</a></li>
+    </ul>
+    <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg"></svg>
+    <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+    </nav>
+</div>
+
+
+  <div class="mainContainer container mx-auto">
+            <div class="flex flex-col"></div>
+            <div class="wrapper">
+                <article class="contents">
+                    <section id="topic1">
+                        <div class="parTitle">Test</div>
+                            <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, dicta iusto excepturi exercitationem corporis modi sequi porro inventore doloribus qui voluptate enim corrupti ratione totam quam blanditiis velit possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, animi, laudantium vero perspiciatis ab, repellendus
+                                asperiores a aut soluta architecto consectetur consequatur omnis explicabo sed veritatis error enim nobis quibusdam.</div>            
+                            </div>
+                    </section>
+                </article>
+    
+                <div class="wrapper">
+                    <article class="contents">
+                        <section id="topic2">
+                            <div class="parTitle">Test</div>
+                                <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, animi, laudantium vero perspiciatis ab, repellendus
+                                    asperiores a aut soluta architecto consectetur consequatur omnis explicabo sed veritatis error enim nobis quibusdam.</div>            
+                                </div>
+                        </section>
+                    </article>

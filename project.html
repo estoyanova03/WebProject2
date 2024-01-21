@@ -7,7 +7,15 @@
     
     <link rel="stylesheet" href="homePage.css">
     <link rel="stylesheet" href="navigation.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/format-justify.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
     <script src="project.js" id="project-js"></script>
 </head>
 <body>
@@ -15,23 +23,40 @@
   <div class="info">test</div>
   <!--Top navigation-->
     <div class="topnav">
-      <a href="#home">Home</a>
-      <a href="fundamentals.html">Fundamentals</a>
-      <a href="testingThroughDev.html">Throughout the Software Development Lifecycle</a>
-      <a href="#about">Static Testing</a>
-      <a href="#about">Techniques</a>
-      <a href="#about">Management</a>
-      <a href="#about">Tool Support for Testing</a>
+
+      <div class="naviButtons">
+        <a href="#home"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>
+        
+      <div class="naviButtons">
+      <a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
+
+      <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the Software Development Lifecycle</a></div>
+      
+      <div class="naviButtons"><a href="#about"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
+      <div class="naviButtons"><a href="#about"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
+      <div class="naviButtons"><a href="#about"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
+      <div class="naviButtons"><a href="#about"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
+      
+      
+     
+
+      
+      
+      
 
 
 
       <!--menu-->
+    <div class="menu">
       <button class="menuButton">
         <div class="menuIcon", onclick="expand()">
-        <div class="lineMenu"></div>
-        <div class="lineMenu"></div>
-        <div class="lineMenu"></div>
-      </div></button>
+          <div class="lineMenu"></div>
+          <div class="lineMenu"></div>
+          <div class="lineMenu"></div>
+       </div>
+    </button>
+    </div>
+    
         <div id="myDropdown" class="dropInfo">
             <a href="#home">Home</a><br>
             <a href="#home">Home</a><br>
