@@ -1,33 +1,32 @@
 html {
     scroll-behavior: smooth;
+    display: flex;
+    display: inline-block;
+
   }
-  
-  /* 2. Make nav sticky */
-  main > nav {
-    position: sticky;
-    top: 2rem;
-    align-self: start;
-  }
-  
   /* 3. ScrollSpy active styles (see JS tab for activation) */
   .section-nav li.active > a {
     color: #333;
     font-weight: 500;
   }
-  
   /* Sidebar Navigation */
   .section-nav {
-    top: 60%;
+    left: 30px;
+    justify-self: center;
+    top: 52%;
     display: inline-block;
     margin-top: 30px;
     height: auto;
-    width: 100px;
+    width: auto;
     position: fixed;
     padding-left: 0;
-    border-left: 1px solid #efefef;
+    border-left: 1px solid #525252;
+    margin-top: 2rem;
+    padding-left: 0;
   }
   
   .section-nav a {
+    font-size: 20px;
     text-decoration: none;
     display: block;
     padding: .125rem 0;
@@ -39,20 +38,7 @@ html {
   .section-nav a:focus {
     color: #666;
   }
-  
-  /** Poor man's reset **/
-  * {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    background: #fff;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  }
-  
+
   ul, ol {
     list-style: none;
     margin: 0;
@@ -63,19 +49,19 @@ html {
   }
   
   h1 {
-    font-weight: 300;
+    font-size: 60px;
+    font-weight: lighter;
+    color: #525252;
   }
-  
-  /** page layout **/
-  main {
-    display: grid;
-    grid-template-columns: 1fr 15em;
-    max-width: 100em;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  /** enlarge the sections for this demo, so that we have a long scrollable page **/
-  section {
-    padding-bottom: 20rem;
-  }
+
+  @media screen and (max-width: 1000px) {
+    .section-nav {
+        display: none; /* Hide the sidebar navigation on smaller screens */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .section-nav {
+        top: 50%; /* Adjust the top position for smaller screens */
+    }
+}

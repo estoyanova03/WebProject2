@@ -3,34 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throughout the Software Development Lifecycle</title>
-    <link rel="stylesheet" href="testingThroughDev.css">
-    <script src="testingThroughDev.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="infoPages.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="toc.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/format-justify.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
+    <script src="toc.js"></script>
+    <script src="project.js" id="project-js"></script>
+    <title>Fundamentals</title>
 </head>
 <body>
-    <div class="info"></div>
-    <hr>
+  <!--Top navigation-->
+  <div class="topnav">
+    <div class="naviButtons"><a href="project.html"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>  
+    <div class="naviButtons"><a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
+    <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the Software Development Lifecycle</a></div>
+    <div class="naviButtons"><a href="staticTesting.html"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
+    <div class="naviButtons"><a href="techniques.html"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
+    <div class="naviButtons"><a href="management.html"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
+    <div class="naviButtons"><a href="tools.html"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
+    
+        <!--menu-->
+        <button class="menuButton" onclick="expand()">
+            <div class="lineMenu"></div>
+            <div class="lineMenu"></div>
+            <div class="lineMenu"></div>
+      </button>
+      
+      <!--dropdown-->
+          <div id="myDropdown" class="dropInfo">
+              <a href="#home">Home</a><br>
+              <a href="#home">Home</a><br>
+          </div>
+        </div>
+
     <div class="mainDiv">
         <div class="title">
-            <li>Throughout the Software Development Lifecycle</li>
+            <li>Testing Throughout the Software Development Lifecycle</li>
         </div>
         <div class="additionalInfo">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-             Dicta doloribus adipisci, ut labore facere optio veritatis error corrupti quas ad et? Ut quasi optio consequatur distinctio magni beatae iure laborum?
+            Dicta doloribus adipisci, ut labore facere optio veritatis error corrupti quas ad et? Ut quasi optio consequatur distinctio magni beatae iure laborum?
         </div>
     </div>
-    <div class="scrollMenu">menu</div>
-    <div class="infoPar">
-        <div class="parTitle">Test</div>
-        <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, animi, laudantium vero perspiciatis ab, repellendus
-            asperiores a aut soluta architecto consectetur consequatur omnis explicabo sed veritatis error enim nobis quibusdam.</div>
-            <hr>
-    </div>
-    <div class="infoPar">
-        <div class="parTitle">Test</div>
-        <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, animi, laudantium vero perspiciatis ab, repellendus
-            asperiores a aut soluta architecto consectetur consequatur omnis explicabo sed veritatis error enim nobis quibusdam.</div>
-            <hr>
-    </div>
+
+    <main>
+        <div>
+            <section id="topic1">
+                    <div class="mainContainer container mx-auto">
+                        <div class="flex flex-col"></div>
+                        <div class="wrapper">
+                            <div class="parTitle">Test</div>
+                            <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem nulla eum recusandae, voluptates illum ducimus porro nemo voluptatem neque aspernatur explicabo officiis. Debitis fugiat quo architecto fuga rerum quam!</div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="topic2">
+                <div class="mainContainer container mx-auto">
+                    <div class="flex flex-col"></div>
+                    <div class="wrapper">
+                        <div class="parTitle">Test</div>
+                        <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem nulla eum recusandae, voluptates illum ducimus porro nemo voluptatem neque aspernatur explicabo officiis. Debitis fugiat quo architecto fuga rerum quam!</div>
+                    </div> 
+                </div>   
+            </section>
+
+            <nav class="section-nav">
+                <ol>
+                  <li><a href="#topic1">Topic 1</a></li>
+                  <li><a href="#topic2">Topic 2</a></li>
+                  <li><a href="#topic2">Topic 3</a></li>
+                </ol>
+              </nav>
+        </div>
+    </main>        
+
+    
+
+
+      
+
 </body>
 </html>

@@ -1,13 +1,15 @@
 body {
     margin: 0;
 }
-
+.bg-ltblue {
+  background-color: #CAD7EF;
+}
 .homeContainer {
   padding: 20px;
   display:flex;
 }
 .homeContainer-left {
-  border-left: 4px solid #0f4a86;   
+  border-left: 4px solid #CAD7EF;   
   margin-right: 5px;
   flex: 1;
   float: left;
@@ -32,13 +34,14 @@ body {
 }
 
  li {
+  list-style-type: none;
   font-weight: normal;
   font-size: 18px;
  }
 .homeContainer-right {
   margin-left: 5px;
   flex: 1;
-  background-color: #0f4a86;
+  background-color: #CAD7EF;
   float: left;
   width: 40%;
   padding: 20px;
@@ -52,12 +55,38 @@ body {
   font-weight: bold;
 }
 
-.logoDiv {
-  height: 20px;
+.firstSection {
+  height: 300px;
   width: auto;
-  background-image: url(logo.jpg);
+  background-image: url(qaimagetoppng.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   padding: 150px;
   
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+      flex-direction: column;
+  }
+
+  .homeContainer-left,
+  .homeContainer-right {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+  }
+  .logoDiv {
+    padding: 5%;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .homeContainer-left {
+      width: 35%;
+  }
+
+  .homeContainer-right {
+      width: 55%;
+  }
 }

@@ -2,78 +2,42 @@ body {
   margin: 0;
   padding: 0;
 }
-.mainContainer {
-    float: left;
-    display: inline-block;
+.title {
+  color: white;
+  font-size: 35px;
+  font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
+  padding-top: 20px;
 }
-.mainDiv {
-  float: right;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: auto;
-  height: 250px;
-  background-color:#0f4a86;
-  }
-  .title {
-    color: white;
-    font-size: 35px;
-    font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
-    padding-top: 20px;
-  }
-  .title li{
+section {
+  margin-top: 3%;
+}
+.title li{
     padding-left: 17px;
-  }
-  .additionalInfo {
-    color: white;
-    font-size: 20px;
-    font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
-    padding-top: 8%;
-    padding-left: 2%;
-  }
-  .infoPar{
-    /*float: right;*/
-    width: 50%;
-    margin-top: 10px;
-    height: auto;
-  }
-  .infoPar hr{
-    /*display: inline-block;*/
-    width: 400px;
-    border-bottom: 2px solid black ;
-  }
-  .parTitle {
-    font-family: 'Courier New', monospace;
-    font-size: 60px;
-  }
-  .parContent {
-    font-family: Garamond, serife;
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-  }
-  .container {
-    width: 100%;
 }
-
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px
-    }
+.additionalInfo {
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
 }
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px
-    }
+.infoPar{
+  /*float: right;*/
+  width: 50%;
+  height: auto;
 }
-@media (min-width: 1024px) {
-    .container {
-        max-width:1024px
-    }
+.infoPar hr{
+  /*display: inline-block;*/
+  width: 400px;
+  border-bottom: 2px solid black ;
 }
-@media (min-width: 1280px) {
-    .container {
-        max-width:1280px
-    }
+.parTitle {
+  font-weight: lighter;
+  font-family: 'Courier New', monospace;
+}
+.parContent {
+  font-family: Garamond, serif;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
 .text-60 {
     font-size: 60px;
@@ -83,5 +47,25 @@ body {
 }
 .wrapper {
     width: 70%;
-    margin-left: 280px;
+    margin-left: auto;
 }
+@media screen and (min-width: 640px) {
+  h2{font-size: 30px;}
+}
+@media screen and (min-width: 768px) {
+  h2{font-size: 40px;}
+}
+@media screen and (min-width: 1024px) {
+  h2{font-size: 40px;}
+}
+@media screen and (min-width: 1280px) {
+    h2{font-size: 50px;}
+}
+@media screen and (max-width: 1000px) {
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
