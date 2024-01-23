@@ -4,27 +4,16 @@ body {
 .bg-ltblue {
   background-color: #CAD7EF;
 }
-.homeContainer {
-  padding: 20px;
-  display:flex;
+.bg-ltblue p {
+  font-family:Georgia, serif;
+  font-size: 40px;
+  padding-bottom: 25px;
 }
-.homeContainer-left {
-  border-left: 4px solid #CAD7EF;   
-  margin-right: 5px;
-  flex: 1;
-  float: left;
-  width: 40%;
-}
-.homeContainer-left p {
-  padding-bottom: 2%;
-  text-indent: 10px;
-  font-family: Garamond;
-  font-weight: bold;
-  font-size: 25px;
- }
- .check{
+.bg-ltblue li {
   position: relative;   /*children of the class take the postition of the parent*/
-  margin-bottom: 9px;
+  font-family:Georgia, serif;
+  font-size: 20px;
+  padding-bottom: 15px;
 }
 .check::before {
   left: -15px;
@@ -38,22 +27,6 @@ body {
   font-weight: normal;
   font-size: 18px;
  }
-.homeContainer-right {
-  margin-left: 5px;
-  flex: 1;
-  background-color: #CAD7EF;
-  float: left;
-  width: 40%;
-  padding: 20px;
-}
-
-.homeContainer-right p {
-  color: white;
-  text-align: center;
-  font-size: 22px;
-  font-family: Garamond;
-  font-weight: bold;
-}
 
 .firstSection {
   height: 300px;
@@ -63,14 +36,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 150px;
-  
 }
 
 @media screen and (max-width: 768px) {
   .homeContainer {
       flex-direction: column;
   }
-
   .homeContainer-left,
   .homeContainer-right {
       width: 100%;
@@ -85,7 +56,6 @@ body {
   .homeContainer-left {
       width: 35%;
   }
-
   .homeContainer-right {
       width: 55%;
   }
