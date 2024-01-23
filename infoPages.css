@@ -2,32 +2,18 @@ body {
   margin: 0;
   padding: 0;
 }
-.title {
-  color: white;
-  font-size: 35px;
-  font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
-  padding-top: 20px;
+.bg-ltbluef {
+  background-color: #CAD7EF;
 }
 section {
   margin-top: 3%;
 }
-.title li{
-    padding-left: 17px;
-}
 .additionalInfo {
-  color: white;
   font-size: 20px;
   font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
 }
-.infoPar{
-  /*float: right;*/
-  width: 50%;
-  height: auto;
-}
-.infoPar hr{
-  /*display: inline-block;*/
-  width: 400px;
-  border-bottom: 2px solid black ;
+h1{
+  font-family:Georgia, serif;
 }
 .parTitle {
   font-weight: lighter;
@@ -36,30 +22,41 @@ section {
 .parContent {
   font-family: Garamond, serif;
   font-size: 20px;
-  border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
-.text-60 {
-    font-size: 60px;
-}
-.front-courier {
-    font-family: 'Courier New', monospace;
+li {
+  font-family: Garamond, serif;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 .wrapper {
     width: 70%;
     margin-left: auto;
 }
+.about {
+  margin-left: auto;
+  margin-right: auto;
+ }
+ p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
 @media screen and (min-width: 640px) {
   h2{font-size: 30px;}
+  h1{font-size: 30px;}
 }
 @media screen and (min-width: 768px) {
   h2{font-size: 40px;}
+  h1{font-size: 40px;}
 }
 @media screen and (min-width: 1024px) {
   h2{font-size: 40px;}
+  h1{font-size: 40px;}
 }
 @media screen and (min-width: 1280px) {
-    h2{font-size: 50px;}
+  h2{font-size: 50px;}
+  h1{font-size: 50px;}
 }
 @media screen and (max-width: 1000px) {
   .wrapper{

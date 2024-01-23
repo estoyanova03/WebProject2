@@ -4,6 +4,11 @@ body {
 .bg-ltblue {
   background-color: #CAD7EF;
 }
+.w-full p {
+  font-family:Georgia, serif;
+  font-size: 40px;
+  padding-bottom: 25px;
+}
 .bg-ltblue p {
   font-family:Georgia, serif;
   font-size: 40px;
@@ -21,13 +26,11 @@ body {
   content: '✓';
   position: absolute;
 }
-
  li {
   list-style-type: none;
   font-weight: normal;
   font-size: 18px;
  }
-
 .firstSection {
   height: 300px;
   width: auto;

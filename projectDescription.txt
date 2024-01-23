@@ -1,0 +1,19 @@
+This project is created with the idea to provide shortened fundamental information and knowledge about software testing. All information is tailored with the ISTQB Foundation level Syllabus.
+ISTQB is one of the biggest and most established vendor-neutral professional certification schemes in the world.
+ISTQB terminology is industry recognized as the defacto language in the field of software testing and connects professionals worldwide.
+
+The site contains:
+ - home page which provides intro information to catch the user's attention and keep them in the site;
+ - knowledge pages: Fundamentals, Throughout the SDL, Static Testing, Techniques, Management, Tool Support for Testing are pages that contain basics of the topics
+ - hamburger menu with:
+    - about page that has info about the author of the site
+    - report page that containg project's description
+
+Technologies used in the project:
+- HTML (HyperText Markup Language) 
+- CSS (Cascading Style Sheets) - external stylesheets which are: "homePage.css," "navigation.css," and external icon styles from "css.gg" and "Material Icons."
+- JavaScript
+- External libraries: such as icons from css.gg, tailwindcss, Material icons
+- Responsive Design: responsiveness comes from indicating viewport settings in the <head> section and the use of utility classes such as "md:flex-row" and media queries.
+- Navigation: consists of logo, navigation buttons styled with icons, hamburger menu
+- TOC (Table of contents): represented by a <nav> element with an ordered list containing links to specific sections on the page, when reached a specific section is highlighted hroughout the TOC

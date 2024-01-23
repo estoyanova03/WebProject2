@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
-    <link rel="stylesheet" href="infoPages.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="toc.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
@@ -15,81 +11,173 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
-    <script src="toc.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
     <script src="project.js" id="project-js"></script>
-    <title>Fundamentals</title>
+    <script src="toc.js"></script>
+    <link rel="stylesheet" href="infoPages.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="toc.css">
+    <title>Testing Throughout the Software Development Lifecycle</title>
 </head>
 <body>
   <!--Top navigation-->
   <div class="topnav">
+    <img src="logo.png" width="70" height="30" alt="">
     <div class="naviButtons"><a href="project.html"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>  
     <div class="naviButtons"><a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
-    <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the Software Development Lifecycle</a></div>
+    <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the SDL</a></div>
     <div class="naviButtons"><a href="staticTesting.html"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
     <div class="naviButtons"><a href="techniques.html"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
     <div class="naviButtons"><a href="management.html"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
     <div class="naviButtons"><a href="tools.html"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
     
+    <div class="hamburger">
         <!--menu-->
         <button class="menuButton" onclick="expand()">
             <div class="lineMenu"></div>
             <div class="lineMenu"></div>
             <div class="lineMenu"></div>
-      </button>
-      
-      <!--dropdown-->
-          <div id="myDropdown" class="dropInfo">
-              <a href="#home">Home</a><br>
-              <a href="#home">Home</a><br>
-          </div>
-        </div>
+        </button>
 
-    <div class="mainDiv">
-        <div class="title">
-            <li>Testing Throughout the Software Development Lifecycle</li>
+        <!--dropdown-->
+        <div id="myDropdown" class="dropInfo">
+            <a href="about.html">About</a><br>
+            <a href="report.html">Report</a><br>
         </div>
-        <div class="additionalInfo">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dicta doloribus adipisci, ut labore facere optio veritatis error corrupti quas ad et? Ut quasi optio consequatur distinctio magni beatae iure laborum?
         </div>
     </div>
+        
 
-    <main>
-        <div>
-            <section id="topic1">
-                    <div class="mainContainer container mx-auto">
-                        <div class="flex flex-col"></div>
-                        <div class="wrapper">
-                            <div class="parTitle">Test</div>
-                            <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem nulla eum recusandae, voluptates illum ducimus porro nemo voluptatem neque aspernatur explicabo officiis. Debitis fugiat quo architecto fuga rerum quam!</div>
-                        </div>
-                    </div>
-            </section>
-
-            <section id="topic2">
-                <div class="mainContainer container mx-auto">
-                    <div class="flex flex-col"></div>
-                    <div class="wrapper">
-                        <div class="parTitle">Test</div>
-                        <div class="parContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem nulla eum recusandae, voluptates illum ducimus porro nemo voluptatem neque aspernatur explicabo officiis. Debitis fugiat quo architecto fuga rerum quam!</div>
-                    </div> 
-                </div>   
-            </section>
-
-            <nav class="section-nav">
-                <ol>
-                  <li><a href="#topic1">Topic 1</a></li>
-                  <li><a href="#topic2">Topic 2</a></li>
-                  <li><a href="#topic2">Topic 3</a></li>
-                </ol>
-              </nav>
+    <div class="bg-ltbluef">
+        <div class="container text-center mx-auto">
+            <h1>Testing Throughout the Software Development Lifecycle</h1>
+            <p class="additionalInfo py-3">
+            Keywords:acceptance testing, alpha testing, beta testing, change-related testing, commercial off-the-shelf (COTS), 
+            component integration testing, component testing, confirmation testing, contractual acceptance testing, 
+            functional testing, impact analysis, integration testing, maintenance testing, non-functional testing, 
+            operational acceptance testing, regression testing...
+            </p>
         </div>
-    </main>        
+        
+    </div>
 
-    
+    <section id="topic1">
+        <div class="wrapper">
+            <h2 class="parTitle">Software Development Lifecycle Models</h2>
+            <p class="parContent">
+                A software development lifecycle model describes the types of activity performed at each stage in a 
+                software development project, and how the activities relate to one another logically and chronologically. 
+                There are a number of different software development lifecycle models, each of which requires different 
+                approaches to testing. </p>
+                <p class="parContent">It is an important part of a tester's role to be familiar with the common software development lifecycle
+                    models so that appropriate test activities can take place.</p>
+                    
+                <li>For every development activity, there is a corresponding test activity</li>
+                <li>Each test level has test objectives specific to that level</li>
+                <li>Test analysis and design for a given test level begin during the corresponding development activity</li>
+                <li>Testers participate in discussions to define and refine requirements and design, and are involved 
+                    in reviewing work products (e.g., requirements, design, user stories, etc.) as soon as drafts are 
+                    available </li>
+                <p class="parContent">A sequential development model describes the software development process as a linear, sequential flow 
+                    of activities. This means that any phase in the development process should begin when the previous 
+                    phase is complete. In theory, there is no overlap of phases, but in practice, it is beneficial to have early 
+                    feedback from the following phase.
+                    In the Waterfall model, the development activities (e.g., requirements analysis, design, coding, testing) 
+                    are completed one after another. In this model, test activities only occur after all other development 
+                    activities have been completed. 
+                    Unlike the Waterfall model, the V-model integrates the test process throughout the development process, 
+                    implementing the principle of early testing. Further, the V-model includes test levels associated with each 
+                    corresponding development phase, which further supports early testing (see section 2.2 for a discussion 
+                    of test levels). In this model, the execution of tests associated with each test level proceeds sequentially, 
+                    but in some cases overlapping occurs</p>
+            <hr style="border: 1px solid black">
+            <div class="flex justify-center"><img src="fundamentals.svg" height="500" width="500" alt=""></div>
+        </div>
+    </section>
 
+    <section id="topic2">
+        <div class="wrapper">
+            <h2 class="parTitle">Test Levels</h2>
+            <p class="parContent">
+                Test levels are groups of test activities that are organized and managed together. Each test level is an 
+                instance of the test process, consisting of the activities described in section 1.4, performed in relation to 
+                software at a given level of development, from individual units or components to complete systems or, 
+                where applicable, systems of systems. Test levels are related to other activities within the software 
+                development lifecycle. The test levels used in this syllabus are:</p>
+                <li>Component testing</li>
+                <li>Integration testing</li>
+                <li>System testing</li>
+                <li>Acceptance testing</li>
+                <p class="parContent">In iterative development, project teams can employ various forms of acceptance testing during and at the 
+                    end of each iteration, such as those focused on verifying a new feature against its acceptance criteria and 
+                    those focused on validating that a new feature satisfies the users’ needs. In addition, alpha tests and beta 
+                    tests may occur, either at the end of each iteration, after the completion of each iteration, or after a series 
+                    of iterations. User acceptance tests, operational acceptance tests, regulatory acceptance tests, and 
+                    contractual acceptance tests also may occur, either at the close of each iteration, after the completion of 
+                    each iteration, or after a series of iterations.</p>
+            <hr style="border: 1px solid black">
+        </div>   
+    </section>
 
-      
+    <section id="topic3">
+        <div class="wrapper">
+            <h2 class="parTitle">Test Types</h2>
+            <p class="parContent">
+                A test type is a group of test activities aimed at testing specific characteristics of a software system, or a 
+                part of a system, based on specific test objectives. Such objectives may include:
+            </p>
+            <li>Evaluating functional quality characteristics, such as completeness, correctness, and 
+                appropriateness</li>
+            <li>Evaluating non-functional quality characteristics, such as reliability, performance efficiency, 
+                security, compatibility, and usability</li>
+            <li>Evaluating whether the structure or architecture of the component or system is correct, complete, 
+                and as specified </li>
+            <li>Evaluating the effects of changes, such as confirming that defects have been fixed (confirmation 
+                testing) and looking for unintended changes in behavior resulting from software or environment 
+                changes (regression testing)</li>
+            <p class="parContent">Confirmation testing and regression testing are performed at all test levels.
+                Especially in iterative and incremental development lifecycles (e.g., Agile), new features, changes to 
+                existing features, and code refactoring result in frequent changes to the code, which also requires 
+                change-related testing. Due to the evolving nature of the system, confirmation and regression testing are 
+                very important. This is particularly relevant for Internet of Things systems where individual objects (e.g., 
+                devices) are frequently updated or replaced. 
+                Regression test suites are run many times and generally evolve slowly, so regression testing is a strong 
+                candidate for automation. Automation of these tests should start early in the project</p>
+            <hr style="border: 1px solid black">
+        </div>    
+    </section>
+
+    <section id="topic4">
+        <div class="wrapper">
+            <h2 class="parTitle">Maintenance Testing</h2>
+            <p class="parContent">
+                Once deployed to production environments, software and systems need to be maintained. Changes of 
+                various sorts are almost inevitable in delivered software and systems, either to fix defects discovered in 
+                operational use, to add new functionality, or to delete or alter already-delivered functionality. Maintenance 
+                is also needed to preserve or improve non-functional quality characteristics of the component or systemover its lifetime, especially performance efficiency, compatibility, reliability, security, , and portability. 
+                When any changes are made as part of maintenance, maintenance testing should be performed, both to 
+                evaluate the success with which the changes were made and to check for possible side-effects (e.g., 
+                regressions) in parts of the system that remain unchanged (which is usually most of the system). 
+                Maintenance can involve planned releases and unplanned releases (hot fixes). 
+                A maintenance release may require maintenance testing at multiple test levels, using various test types, 
+                based on its scope. The scope of maintenance testing depends on:
+            </p>
+            <li>The degree of risk of the change, for example, the degree to which the changed area of software 
+                communicates with other components or systems</li>
+            <li>The size of the existing system</li>
+            <li>The size of the change</li>
+            <hr style="border: 1px solid black">
+        </div>   
+    </section>
+            
+<nav class="section-nav">
+    <ol>
+        <li class="py-3"><a href="#topic1">Software Development Lifecycle Models </a></li>
+        <li class="py-3"><a href="#topic2">Test Levels</a></li>
+        <li class="py-3"><a href="#topic3">Test Typess</a></li>
+        <li class="py-3"><a href="#topic4">Maintenance Testing</a></li>
+    </ol>
+</nav>
 
 </body>
 </html>

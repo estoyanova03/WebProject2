@@ -336,3 +336,33 @@ button css:
 
 </body>
 </html>
+
+
+<div class="container mx-auto">
+        <div class="flex flex-col md:flex-row items-center" style="margin-top: 6%;">
+            <div class="w-full md:w-1/4 flex-col flex-row justify-center items-center">
+                <div class="mb-4 text-center py-3">
+                    <img src="email.png" alt="" height="100" width="100">
+                    <p>esstoyanova03@gmail.com</p>
+                </div>
+            <div class="w-full md:w-1/4 flex-col flex-row justify-center items-center">
+                <div class="mb-4 text-center py-3">
+                    <img src="phone-5968.svg" alt="" height="100" width="100">
+                    <p>0892696695</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 flex-col flex-row justify-center items-center">
+                <div class="mb-4 text-center py-3">
+                    <img src="location-2952.svg" alt="" height="100" width="100">
+                    <p>Sofia</p>
+                </div>
+        </div>
+            <div class="w-full md:w-1/4 flex-col flex-row justify-center items-center">
+                <div class="mb-4 text-center py-3">
+                    <img src="school-1072.svg" alt=""height="100" width="100">
+                    <p>New Bulgarian Univeristy</p>
+                </div> 
+            </div>  
+            </div>
+    </div>
+    </div>
