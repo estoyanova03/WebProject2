@@ -1,0 +1,109 @@
+.topnav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #525252;
+}
+.topnav a {
+  display: flex;
+  align-items: center;
+  color: #525252;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.topnav a:hover {
+  background-color: #CAD7EF;
+}
+                    /*menu*/
+.menuButton {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menuButton:hover, .menuIcon:focus {
+    background-color: #CAD7EF;
+}
+.hamburger {
+  position: relative;
+}
+
+.lineMenu {
+  width: 30px;
+  height: 3px;
+  background-color: #525252;
+  margin: 6px 0;
+}
+.dropInfo {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropInfo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show {display: block;}
+
+.icon {
+  width: 14px !important;
+  margin-right: 10px;
+}
+                /* Go to top button */
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #3561AE;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#topButton:hover {
+  background-color:#ae3535;
+}
+@media screen and (max-width: 768px) {
+  .info {
+      justify-content: center; /* Center content for small screens */
+      padding-right: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .topnav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .topnav a {
+      padding: 10px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .menuButton {
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .lineMenu {
+      width: 20px; /* Adjust lineMenu width for smaller screens */
+      margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+
+  .dropInfo {
+      top: 60px; /* Adjust top position for smaller screens */
+  }
+  #topButton {
+    font-size: 14px;
+  }
+}

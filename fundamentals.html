@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/format-justify.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+    <script src="project.js" id="project-js"></script>
+    <script src="toc.js"></script>
+    <link rel="stylesheet" href="infoPages.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="toc.css">
+    <title>Fundamentals</title>
+</head>
+<body>
+  <!--Top navigation-->
+  <div class="topnav">
+    <a href="https://www.istqb.org/" target="_blank"><img src="logo.png" width="60" height="25" alt="" style="padding: 0%;"></a>
+    <div class="naviButtons"><a href="project.html"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>  
+    <div class="naviButtons"><a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
+    <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the SDL</a></div>
+    <div class="naviButtons"><a href="staticTesting.html"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
+    <div class="naviButtons"><a href="techniques.html"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
+    <div class="naviButtons"><a href="management.html"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
+    <div class="naviButtons"><a href="tools.html"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
+    
+    <div class="hamburger">
+        <!--menu-->
+        <button class="menuButton" onclick="expand()">
+            <div class="lineMenu"></div>
+            <div class="lineMenu"></div>
+            <div class="lineMenu"></div>
+        </button>
+
+        <!--dropdown-->
+        <div id="myDropdown" class="dropInfo">
+            <a href="about.html">About</a><br>
+            <a href="report.html">Report</a><br>
+        </div>
+        </div>
+    </div>
+        
+
+    <div class="bg-ltbluef">
+        <div class="container text-center mx-auto">
+            <h1>Fundamentals of testing</h1>
+            <p class="additionalInfo py-3">
+            Keywords
+            coverage, debugging, defect, error, failure, quality, quality assurance, root cause, test analysis, test basis, 
+            test case, test completion, test condition, test control, test data, test design, test execution, 
+            test implementation, test monitoring, test object, test objective, test oracle, test planning, test procedure, 
+            test process, test suite, testing, testware, traceability, validation, verification
+            </p>
+        </div>
+        
+    </div>
+
+    <section id="topic1">
+        <div class="wrapper">
+            <h2 class="parTitle">What is Testing?</h2>
+            <p class="parContent">
+                A number of testing principles have been suggested over the past 50 years and offer general guidelines 
+                common for all testing.
+                    1. Testing shows the presence of defects, not their absence
+                Testing can show that defects are present, but cannot prove that there are no defects. Testing reduces 
+                the probability of undiscovered defects remaining in the software but, even if no defects are found, testing 
+                is not a proof of correctness. 
+                2. Exhaustive testing is impossible
+                Testing everything (all combinations of inputs and preconditions) is not feasible except for trivial cases. 
+                Rather than attempting to test exhaustively, risk analysis, test techniques, and priorities should be used to 
+                focus test efforts. 
+                3. Early testing saves time and money
+                To find defects early, both static and dynamic test activities should be started as early as possible in the 
+                software development lifecycle. Early testing is sometimes referred to as shift left. Testing early in the 
+                software development lifecycle helps reduce or eliminate costly changes (see section 3.1).
+                4. Defects cluster together
+                A small number of modules usually contains most of the defects discovered during pre-release testing, or 
+                is responsible for most of the operational failures. Predicted defect clusters, and the actual observed 
+                defect clusters in test or operation, are an important input into a risk analysis used to focus the test effort 
+                (as mentioned in principle 2).  
+            </p>
+            <div class="flex justify-center"><img src="fundamentals.svg" height="500" width="500" alt=""></div>
+        </div>
+    </section>
+
+    <section id="topic2">
+        <div class="wrapper">
+            <h2 class="parTitle">Why is Testing Necessary?</h2>
+            <p class="parContent">
+                Software systems are an integral part of life, from business applications (e.g., banking) to consumer 
+                products (e.g., cars). Most people have had an experience with software that did not work as expected. 
+                Software that does not work correctly can lead to many problems, including loss of money, time, or 
+                business reputation, and even injury or death. Software testing is a way to assess the quality of the 
+                software and to reduce the risk of software failure in operation.
+                A common misperception of testing is that it only consists of running tests, i.e., executing the software 
+                and checking the results. As described in section 1.4, software testing is a process which includes many 
+                different activities; test execution (including checking of results) is only one of these activities. The test 
+                process also includes activities such as test planning, analyzing, designing, and implementing tests, 
+                reporting test progress and results, and evaluating the quality of a test object. 
+                Some testing does involve the execution of the component or system being tested; such testing is called 
+                dynamic testing. Other testing does not involve the execution of the component or system being tested; 
+                such testing is called static testing. So, testing also includes reviewing work products such as 
+                requirements, user stories, and source code. 
+                Another common misperception of testing is that it focuses entirely on verification of requirements, user 
+                stories, or other specifications. While testing does involve checking whether the system meets specified 
+                requirements, it also involves validation, which is checking whether the system will meet user and other 
+                stakeholder needs in its operational environment(s).
+            </p>
+        </div>   
+    </section>
+
+    <section id="topic3">
+        <div class="wrapper">
+            <h2 class="parTitle">Seven Testing Principles</h2>
+            <p class="parContent">
+            Rigorous testing of components and systems, and their associated documentation, can help reduce the 
+                    risk of failures occurring during operation. When defects are detected, and subsequently fixed, this 
+                contributes to the quality of the components or systems. In addition, software testing may also be 
+                    required to meet contractual or legal requirements or industry-specific standards.
+                    Throughout the history of computing, it is quite common for software and systems to be delivered into 
+    operation and, due to the presence of defects, to subsequently cause failures or otherwise not meet the 
+    stakeholders’ needs. However, using appropriate test techniques can reduce the frequency of such 
+    problematic deliveries, when those techniques are applied with the appropriate level of test expertise, in 
+    the appropriate test levels, and at the appropriate points in the software development lifecycle. Examples 
+    include:
+            </p>
+        </div>    
+    </section>
+
+    <section id="topic4">
+        <div class="wrapper">
+            <h2 class="parTitle">Test Process</h2>
+            <p class="parContent">
+                There is no one universal software test process, but there are common sets of test activities without which 
+            testing will be less likely to achieve its established objectives. These sets of test activities are a test 
+            process. The proper, specific software test process in any given situation depends on many factors. 
+            Which test activities are involved in this test process, how these activities are implemented, and when 
+            these activities occur may be discussed in an organization’s test strategy It is very useful if the test basis (for any level or type of testing that is being considered) has measurable 
+            coverage criteria defined. The coverage criteria can act effectively as key performance indicators (KPIs) 
+            to drive the activities that demonstrate achievement of software test objectives (see section 1.1.1).
+            </p>
+        </div>   
+    </section>
+
+    <section id="topic5">
+        <div class="wrapper">
+            <div class="flex justify-center py-6"><img src="psych.png" height="500" width="500" alt=""></div>
+            <h2 class="parTitle">The Psychology of Testing</h2>
+            <p class="parContent">
+                Identifying defects during a static test such as a requirement review or user story refinement session, or 
+                identifying failures during dynamic test execution, may be perceived as criticism of the product and of its 
+                author. An element of human psychology called confirmation bias can make it difficult to accept 
+                information that disagrees with currently held beliefs. For example, since developers expect their code to 
+                be correct, they have a confirmation bias that makes it difficult to accept that the code is incorrect. In 
+                addition to confirmation bias, other cognitive biases may make it difficult for people to understand or 
+                accept information produced by testing. Further, it is a common human trait to blame the bearer of bad 
+                news, and information produced by testing often contains bad news.
+                As a result of these psychological factors, some people may perceive testing as a destructive activity, 
+                even though it contributes greatly to project progress and product quality (see sections 1.1 and 1.2). To 
+                try to reduce these perceptions, information about defects and failures should be communicated in a 
+                constructive way. This way, tensions between the testers and the analysts, product owners, designers, 
+                and developers can be reduced. This applies during both static and dynamic testing.
+                Testers and test managers need to have good interpersonal skills to be able to communicate effectively 
+                about defects, failures, test results, test progress, and risks, and to build positive relationships with 
+                colleagues. Ways to communicate well include the following examples:
+                • Start with collaboration rather than battles. Remind everyone of the common go
+            </p>
+        </div>   
+    </section>
+
+            
+<nav class="section-nav">
+    <ol>
+        <li class="py-3"><a href="#topic1">What is Testing? </a></li>
+        <li class="py-3"><a href="#topic2">Why is Testing Necessary?</a></li>
+        <li class="py-3"><a href="#topic3">Seven Testing Principles</a></li>
+        <li class="py-3"><a href="#topic4">Test Process</a></li>
+        <li class="py-3"><a href="#topic5">The Psychology of Testing</a></li>
+    </ol>
+</nav>
+
+</body>
+</html>

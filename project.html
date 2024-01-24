@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/format-justify.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+    <script src="project.js" id="project-js"></script>
+</head>
+<body> 
+
+  <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+
+  <!--Top navigation-->
+    <div class="topnav">
+      <a href="https://www.istqb.org/" target="_blank"><img src="logo.png" width="60" height="25" alt="" style="padding: 0%;"></a>
+      <div class="naviButtons"><a href="#home"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>  
+      <div class="naviButtons"><a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
+      <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the SDL</a></div>
+      <div class="naviButtons"><a href="staticTesting.html"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
+      <div class="naviButtons"><a href="techniques.html"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
+      <div class="naviButtons"><a href="management.html"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
+      <div class="naviButtons"><a href="tools.html"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
+      
+      <!--menu-->
+      <div class="hamburger">
+        <button class="menuButton" onclick="expand()">
+          <div class="lineMenu"></div>
+          <div class="lineMenu"></div>
+          <div class="lineMenu"></div>
+    </button>
+    <!--dropdown-->
+        <div id="myDropdown" class="dropInfo">
+            <a href="about.html">About</a><br>
+            <a href="report.html">Report</a><br>
+        </div>
+      </div>
+      </div>
+      
+      
+    <!--istqb logo-->
+      <div class="firstSection"></div>
+
+      <section class="bg-ltblue py-8">
+        <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 px-2">
+              <p>This site is useful to people that want to:</p>
+              <ul class="test">
+                <li class="check">Start learning from the ground</li>
+                <li class="check">Make a revision of the fundamentals of testing</li>
+                <li class="check">Understand things from one more perspective</li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/2 px-2">
+              <img src="qaimage1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8">
+        <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 px-2">
+              <img src="qaimage2.webp" alt="">
+            </div>
+            <div class="w-full md:w-1/2 px-2">
+              <p>Introduction to QA Basics</p>
+              <p style="font-size: 20px;">The information in this site is summed up from ISTQB Foundation Level (CTFL) Syllabus</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-ltblue py-8">
+        <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 px-2">
+              <p>If you want to:</p>
+              <ul class="test">
+                <li class="check">Start learning from the ground</li>
+                <li class="check">Make a revision of the fundamentals of testing</li>
+                <li class="check">Understand things from one more perspective</li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/2 px-2">
+              <img src="qaimage1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>

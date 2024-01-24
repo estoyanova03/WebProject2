@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="infoPages.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/open-collective.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/format-justify.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/brush.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+    <script src="project.js" id="project-js"></script>
+</head>
+<body>
+    
+  <!--Top navigation-->
+  <div class="topnav">
+    <img src="logo.png" width="70" height="30" alt="">
+    <div class="naviButtons"><a href="project.html"><div class="icon"><i class="gg-home-alt"></i></div>Home</a></div>  
+    <div class="naviButtons"><a href="fundamentals.html"><div class="icon"><i class="gg-ghost"></i></div>Fundamentals</a></div>
+    <div class="naviButtons"><a href="testingThroughDev.html"><div class="icon"><i class="gg-open-collective"></i></div>Throughout the SDL</a></div>
+    <div class="naviButtons"><a href="staticTesting.html"><div class="icon"><i class="gg-format-justify"></i></div>Static Testing</a></div>
+    <div class="naviButtons"><a href="techniques.html"><div class="icon"><i class="gg-brush"></i></div>Techniques</a></div>
+    <div class="naviButtons"><a href="management.html"><div class="icon"><i class="gg-user"></i></div>Management</a></div>
+    <div class="naviButtons"><a href="tools.html"><div class="icon"><i class="gg-toolbox"></i></div>Tool Support for Testing</a></div>
+    
+    <!--menu-->
+    <div class="hamburger">
+      <button class="menuButton" onclick="expand()">
+        <div class="lineMenu"></div>
+        <div class="lineMenu"></div>
+        <div class="lineMenu"></div>
+  </button>
+  <!--dropdown-->
+      <div id="myDropdown" class="dropInfo">
+          <a href="about.html">About</a><br>
+          <a href="report.html">Report</a><br>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="bg-ltbluef justify-items-center">
+        <div class="container text-center mx-auto">
+            <h1>Website's description</h1>
+    </div>
+        <center><img src="news-4298.png" width="200" height="200" class="py-3"></center>
+    </div>
+
+
+    <div class="wrapper">
+        <h2 class="parTitle py-3">Report</h2>
+        <p class="parContent">
+            This project is created with the idea to provide shortened fundamental information and knowledge about software testing. All information is tailored with the ISTQB Foundation level Syllabus.
+            ISTQB is one of the biggest and most established vendor-neutral professional certification schemes in the world.
+            ISTQB terminology is industry recognized as the defacto language in the field of software testing and connects professionals worldwide.</p>
+        <p class="parContent">
+            The site contains:
+            <li>home page which provides intro information to catch the user's attention and keep them in the site</li>
+            <li>knowledge pages: Fundamentals, Throughout the SDL, Static Testing, Techniques, Management, Tool Support for Testing are pages that contain basics of the topics</li>
+            <li>hamburger menu with:
+                <ul>about page that has info about the author of the site</ul>
+                <ul>report page that containg project's description</ul>
+            </li>
+        </p>
+        <p class="parContent">
+            Technologies used in the project:
+            <li>HTML (HyperText Markup Language) </li>
+            <li>CSS (Cascading Style Sheets) - external stylesheets which are: "homePage.css," "navigation.css," and external icon styles from "css.gg" and "Material Icons.</li>
+            <li>JavaScript</li>
+            <li>External libraries: such as icons from css.gg, tailwindcss, Material icons</li>
+            <li>Responsive Design: responsiveness comes from indicating viewport settings in the head section and the use of utility classes such as "md:flex-row" and media queries.</li>
+            <li>Navigation: consists of logo, navigation buttons styled with icons, hamburger menu</li>
+            <li>TOC (Table of contents): represented by a <nav> element with an ordered list containing links to specific sections on the page, when reached a specific section is highlighted hroughout the TOC</li> 
+        </p>
+        <p class="parContent">
+            Results from validators:
+        </p>
+            <img src="cssValidation.png" alt=""> 
+            <img src="homePageValidationResult.png" alt=""> 
+        
+            
+</html>

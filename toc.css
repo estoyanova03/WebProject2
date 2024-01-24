@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+    display: flex;
+    display: inline-block;
+
+  }
+  
+  .section-nav li.active > a {
+    color: #333;
+    font-weight: 500;
+  }
+  /* Sidebar Navigation */
+  .section-nav {
+    left: 30px;
+    justify-self: center;
+    top: 52%;
+    display: inline-block;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    position: fixed;
+    padding-left: 0;
+    border-left: 1px solid #525252;
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+  
+  .section-nav a {
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+  }
+  
+  .section-nav a:hover,
+  .section-nav a:focus {
+    color: #666;
+  }
+
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin-left: 1rem;
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-weight: lighter;
+    color: #525252;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .section-nav {
+        display: none; /* Hide the sidebar navigation on smaller screens */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .section-nav {
+        top: 50%; /* Adjust the top position for smaller screens */
+    }
+}

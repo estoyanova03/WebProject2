@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bg-ltbluef {
+  background-color: #CAD7EF;
+}
+section {
+  margin-top: 3%;
+}
+.additionalInfo {
+  font-size: 20px;
+  font-family: Helvetica 'Courier New', Courier, monospace, sans-serif;
+}
+h1{
+  font-family:Georgia, serif;
+}
+.parTitle {
+  font-weight: lighter;
+  font-family: 'Courier New', monospace;
+}
+.parContent {
+  font-family: Garamond, serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+li {
+  font-family: Garamond, serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.wrapper {
+    width: 70%;
+    margin-left: auto;
+}
+.about {
+  margin-left: auto;
+  margin-right: auto;
+ }
+ p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+@media screen and (min-width: 640px) {
+  h2{font-size: 30px;}
+  h1{font-size: 30px;}
+}
+@media screen and (min-width: 768px) {
+  h2{font-size: 40px;}
+  h1{font-size: 40px;}
+}
+@media screen and (min-width: 1024px) {
+  h2{font-size: 40px;}
+  h1{font-size: 40px;}
+}
+@media screen and (min-width: 1280px) {
+  h2{font-size: 50px;}
+  h1{font-size: 50px;}
+}
+@media screen and (max-width: 1000px) {
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
